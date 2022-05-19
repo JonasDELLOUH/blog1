@@ -10,6 +10,8 @@ class Start extends StatefulWidget {
 class _StartState extends State<Start> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Image.asset('yoga.jpeg'),
+    );
   }
 }
