@@ -12,13 +12,12 @@ class _Start1State extends State<Start1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(0.2),
+      backgroundColor: Colors.white.withOpacity(0.9),
       body: Column(
         children: [
           Expanded(
             flex: 11,
             child: Container(
-              color: Colors.white.withOpacity(0.1),
               child: Center(
                 child: Container(
                   margin: const EdgeInsets.only(left: 60,top: 60,right: 60,bottom: 80),
@@ -33,10 +32,10 @@ class _Start1State extends State<Start1> {
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.cyan,
-                                    borderRadius: BorderRadius.circular(30),
+                                    borderRadius: BorderRadius.circular(25),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.grey.shade300,
+                                        color: Colors.black54.withOpacity(0.3),
                                         blurRadius: 4,
                                         offset: const Offset(0,4),
                                       )
@@ -55,7 +54,7 @@ class _Start1State extends State<Start1> {
                                     borderRadius: BorderRadius.circular(30),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.grey.shade300,
+                                        color: Colors.black54.withOpacity(0.3),
                                         blurRadius: 4,
                                         offset: const Offset(0,4),
                                       )
@@ -79,7 +78,7 @@ class _Start1State extends State<Start1> {
                                       borderRadius: BorderRadius.circular(30),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.grey.shade300,
+                                          color: Colors.black54.withOpacity(0.3),
                                           blurRadius: 4,
                                           offset: const Offset(0,4),
                                         )
@@ -95,10 +94,10 @@ class _Start1State extends State<Start1> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                       color: Colors.red,
-                                      borderRadius: BorderRadius.circular(30),
+                                      borderRadius: BorderRadius.circular(25),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.grey.shade300,
+                                          color: Colors.black54.withOpacity(0.3),
                                           blurRadius: 4,
                                           offset: const Offset(0,4),
                                         )
@@ -150,7 +149,17 @@ class _Start1State extends State<Start1> {
                           InkWell(
                             onTap: null,
                             child: Container(
-                              color: Colors.redAccent,
+                              decoration: BoxDecoration(
+                                  color: Colors.redAccent,
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.shade300,
+                                      blurRadius: 4,
+                                      offset: const Offset(0,4),
+                                    )
+                                  ]
+                              ),
                               height: 40,
                               width: 60,
                               child: const Center(child: Icon(Icons.east, color: Colors.white,),),

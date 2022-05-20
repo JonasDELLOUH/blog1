@@ -1,3 +1,4 @@
+import 'package:blog/views/start.dart';
 import 'package:blog/views/start1.dart';
 import 'package:flutter/material.dart';
 
